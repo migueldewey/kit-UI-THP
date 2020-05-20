@@ -1,0 +1,282 @@
+/********************
+ 1) Coleurs
+ •	La couleur principale (primary)
+ •	La couleur secondaire (secondary)
+ •	Trois nuances de gris :
+	o	Un gris très foncé (dark)
+	o	Un gris plus clair (medium-light)
+	o	Un gris très léger (light)
+ pour les alertes et buttons
+	•	warning dans les tons oranges #FF4B08
+•	danger dans les tons rouges #E81507
+•	success dans les tons vertes #05E814
+•	info dans les tons bleues  #0580E8 **************/
+.primary {
+	color: #FFC636;
+}
+.secondary {
+	color: #002FB3;
+}
+.dark {
+	color: #434A54;
+}
+.medium-light {
+	color: #656D78;
+}
+.light {
+	color: #CCD1D9;
+}
+/************************
+   2) Typographie
+•	Une police pour les headings (police de titre)
+•	Une police pour le texte normal
+Puis tu devras designer la typographie des éléments suivants :
+•	de <h1> à <h6>
+•	les <p>
+•	le tag <lead>, qui correspond à un paragraphe à qui tu veux donner plus d'importance
+•	les <blockquote>, pour les citations
+•	les <ul>, <ol>, et <li> pour les listes
+******************/ 
+h1, h2, h3, h4, h5, h6 {
+	font: montserrat;
+	font-weight: bold;
+}
+.h1 { 
+	font-size: 2.5rem; 
+}
+.h2 { 
+	font-size: 2rem; 
+}
+.h3 { 
+	font-size: 1.75rem; 
+}
+.h4 { 
+	font-size: 1.5rem; 
+}
+.h5 { 
+	font-size: 1.25rem; 
+}
+.h6 { 
+	font-size: 1rem; 
+}
+
+p, blockquote, ul, ol, li {
+	font-family: 'Roboto', sans-serif;
+}
+small {
+	font-weight: 60%;
+}
+/**************************
+	3) Butons
+	Tu devras designer les boutons, et afficher les 5 types de boutons :
+•	primary
+•	warning
+•	danger
+•	info
+•	success
+Voici les types de boutons que tu devras faire :
+•	Les normaux (btn)
+•	Les outline
+•	Les petits (sm) et grand lg
+**********/
+.btn {
+	display: inline-block;
+  	font-weight: 400;
+  	text-align:center;
+  	vertical-align: middle;
+  	margin-top: 0.25rem;
+  	margin-bottom: 0.25rem;
+  	border: 1px solid transparent;
+  	padding: 0.375rem 0.75rem;
+  	font-size: 1rem;
+  	line-height: 1.5;
+  	border-radius: 0.25em;
+  	transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.btn-primary {
+	background-color: blue;
+	color: white;
+	border-color: blue; 
+	&:hover {
+		background-color: grey;
+	}
+}
+.btn-secondary {
+	background-color: grey;
+	color: white;
+	border-color: grey; 
+	&:hover {
+		background-color: grey;
+	}
+}
+.btn-warning {
+	background-color: orangered;
+	color: white;
+	border-color: orangered;
+	&:hover {
+		background-color: grey;
+	} 
+}
+.btn-danger {
+	background-color: red;
+	color: white;
+	border-color: red;
+	&:hover {
+		background-color: grey;
+	} 
+}
+.btn-info {
+	background-color: mediumturquoise;
+	color: white;
+	border-color: mediumturquoise;
+	&:hover {
+		background-color: grey;
+	} 
+}
+.btn-succes {
+	background-color: green;
+	color: white;
+	border-color: green;
+	&:hover {
+		background-color: grey;
+	} 
+}
+.btn-outline-primary {
+	background-color: white;
+	color: blue;
+	border-color: blue;
+	&:hover{
+		background-color: grey;
+	}
+}
+.btn-outline-secondary {
+	background-color: white;
+	color: grey;
+	border-color: grey;
+	&:hover{
+		background-color: grey;
+	}
+}
+.btn-outline-danger {
+	background-color: white;
+	color: red;
+	border-color: red;
+	&:hover{
+		background-color: grey;
+	}
+}
+.btn-outline-warning {
+	background-color: white;
+	color: orangered;
+	border-color: orangered;
+	&:hover{
+		background-color: grey;
+	}
+}
+.btn-outline-succes {
+	background-color: white;
+	color: green;
+	border-color: green;
+	&:hover{
+		background-color: grey;
+	}
+}
+.btn-outline-info {
+	background-color: white;
+	color: mediumturquoise;
+	border-color: mediumturquoise;
+	&:hover{
+		background-color: grey;
+	}
+}
+/**************************
+	3) Iconographie
+	<script src="https://kit.fontawesome.com/5c1bd154f6.js" crossorigin="anonymous"></script>
+	pour les appeler
+	<i class = "fas fa-icon"></i>
+**********/
+
+/**************************
+	4) Formulaires
+	Tu devras designer les éléments d'un formulaire :
+•	Les <input> classiques
+•	Les <select>, et les <option> à l'intérieur (le dropdown d'un formulaire)
+•	Les <textarea>
+•	Les radio buttons
+•	Les checkboxes
+
+**********/
+
+form {
+    margin: 0px 0px 12px 0px;
+}
+
+
+.form input[type=text] {
+    font-size:16px;
+    width:80%;
+    padding:8px 12px;
+    margin:12px;
+    border-radius:15px;
+    box-shadow: 0;
+    border: 1px solid #9C9389;
+    border-radius:8px;
+
+}
+
+.form input[type=radio] {
+    size:4em;
+    color: red;
+    margin:12px;
+    border: 1px solid #000000;
+    border-radius:15px
+}
+
+select{
+    font-size:16px;
+    width:80%;
+    padding:12px 12px;
+    margin:12px;
+    border-radius:15px
+    box-shadow: 0;
+    border:none;
+}
+
+textarea {
+    font-size: 16px;
+    padding:12px;
+    border-radius:15px;
+    width: 80%;
+    box-shadow:0;
+    margin:12px;
+    border: 1px solid #9C9389;
+}
+.form-check {
+ margin-top: .65rem;
+ padding-left: 0;
+}
+
+/**************************
+	4) Listes
+	Tu vas commencer à faire ta première molécules, yay ! 
+	La group-list est un élément ressemblant à une carte qui 
+	permet d'afficher une liste d'informations utiles.
+	Une liste est assez simple : tu mets des éléments de 
+	texte ensemble, tu ajoutes une image ou une incone ou 
+	rien, et puis c'est tout ! 
+**********/
+.list-group {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.list-group a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0px;
+  &:hover{
+  	text-decoration: none;
+  color: grey
+  }
+}
